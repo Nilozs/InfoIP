@@ -1,6 +1,4 @@
 ion-content {
-    background: linear-gradient(to bottom, #4db8ff, #1a75ff);
-    color: rgb(255, 253, 253);
   
     h1 {
       font-size: 2rem;
@@ -29,19 +27,19 @@ ion-content {
 
       }
   }
-  .titleH{
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: white;
-  }
+.titleH{
+font-size: 1rem;
+margin-bottom: 20px;
+color: white;
+}
   
-  .pInfo{
-    color: white;
-  }
+.pInfo{
+color: white;
+}
 
-  #messageError{
+#messageError{
     font-size: 20px;
     margin: 20px;
     text-align: center;
     display: flex;
-  }
+}

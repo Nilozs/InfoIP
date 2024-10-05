@@ -8,7 +8,7 @@ import { ApiService } from '../services/api.service';
 })
 export class HomePage implements OnInit {
   query: string = '8.8.8.8'; 
-  ipData: any;  
+  ipData: any = {};  
   errorMessage: string = ''; 
 
   constructor(private apiService: ApiService) {}

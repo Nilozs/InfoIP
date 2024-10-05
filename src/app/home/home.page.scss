@@ -1,6 +1,4 @@
 ion-content {
-  background: linear-gradient(to bottom, #4db8ff, #1a75ff);
-  color: rgb(255, 253, 253);
 
   h1 {
     font-size: 2rem;
@@ -24,4 +22,11 @@ ion-content {
 
 .pInfo{
   color: white;
+}
+
+#messageError{
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
 }

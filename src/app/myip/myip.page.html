@@ -36,5 +36,6 @@
       <p class="pInfo">Longitude: {{ ipData.lon }}</p>
       <p class="pInfo">Provedor: {{ ipData.isp }}</p>
     </ion-card-content>
+    <ion-text id="messageError" color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
   </ion-card>
 </ion-content>

@@ -1,7 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-    </ion-buttons>
     <ion-title>
       Info IP
     </ion-title>
@@ -37,9 +35,9 @@
       <p class="pInfo">Longitude: {{ ipData.lon }}</p>
       <p class="pInfo">Provedor: {{ ipData.isp }}</p>
     </ion-card-content>
-    <ion-text color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
     <ion-button class="buttonCard" expand="block" routerLink="/search-ip">
       Quero usar
     </ion-button>
+    <ion-text id="messageError" color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
   </ion-card>
 </ion-content>
