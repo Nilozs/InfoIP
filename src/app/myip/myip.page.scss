@@ -10,16 +10,16 @@ ion-content {
 .titleH{
   font-size: 1rem;
   margin-bottom: 20px;
-  color: white;
-}
+  color: #0079c2;
+  }
+    
+  .pInfo{
+  color: #0079c2;
+  }
   
-.pInfo{
-  color: white;
-}
-
-#messageError{
-  font-size: 20px;
-  margin: 20px;
-  text-align: center;
-  display: flex;
-}
+  #messageError{
+      font-size: 20px;
+      margin: 20px;
+      text-align: center;
+      display: flex;
+  }
