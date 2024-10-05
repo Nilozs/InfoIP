@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back" id="arrowToolbar"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>
       Info IP
@@ -17,16 +20,12 @@
 </ion-header>
 
 <ion-content>
-  <h1>Utilização de Info IP</h1>
+  <h1>Meu IP</h1>
 
   <ion-card *ngIf="ipData">
     <ion-card-header>
-      <ion-card-title>Exemplo IP do Google</ion-card-title>
+      <ion-card-title>Seu endereço IP é {{ query }}</ion-card-title>
     </ion-card-header>
-
-    <ion-item>
-      <ion-input label="Endereço IP:" disabled=[true] value="8.8.8.8 (Qualquer IP)"></ion-input>
-    </ion-item>
 
     <ion-card-content>
       <h4 class="titleH">As informações de {{ query }}:</h4>
@@ -37,9 +36,5 @@
       <p class="pInfo">Longitude: {{ ipData.lon }}</p>
       <p class="pInfo">Provedor: {{ ipData.isp }}</p>
     </ion-card-content>
-    <ion-text color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
-    <ion-button class="buttonCard" expand="block" routerLink="/search-ip">
-      Quero usar
-    </ion-button>
   </ion-card>
 </ion-content>

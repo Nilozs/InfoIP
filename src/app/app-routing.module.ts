@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'search-ip',
+    loadChildren: () => import('./search-ip/search-ip.module').then( m => m.SearchIpPageModule)
+  },
+  {
+    path: 'myip',
+    loadChildren: () => import('./myip/myip.module').then( m => m.MyipPageModule)
+  },
 ];
 
 @NgModule({
