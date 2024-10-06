@@ -7,9 +7,9 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./myip.page.scss'],
 })
 export class MyipPage implements OnInit {
-  query: string = ''; // Inicializa como string vazia
+  query: string = '';
   ipData: any = {};
-  myIp: string = ''; // Inicializa como string
+  myIp: string = ''; 
   errorMessage: string = ''; 
 
   constructor(private apiService: ApiService) {}
@@ -31,14 +31,14 @@ export class MyipPage implements OnInit {
       }
     });
   }
-
+// Método para consumir a API
   getMyIP() {
     this.apiService.getMyIp().subscribe({
       next: (response) => {
-        this.myIp = response.ip; // Acesse diretamente o IP
-        this.query = this.myIp; // Atribui o IP à query
+        this.myIp = response.ip; 
+        this.query = this.myIp; 
         this.errorMessage = ''; 
-        this.searchIpInfo(); // Chama a pesquisa de informações do IP
+        this.searchIpInfo(); 
       },
       error: (error) => {
         console.error('Erro ao consumir a API', error);
